@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 245, 230);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.1;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    padding: 25px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    padding-left: 10px;
+    overflow-x: hidden;
+}
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.2em;
+}
+.date {
+    color: #ccc;
+    margin: 0;
+    font-size: 0.75em;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-top: 10px;
+}
+.line {
+    border-left: 1px solid #ccc;
+    height: 100%;
+}
+.graph {
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 0.2em;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.bar {
+    width: 0.65em;
+    border-radius: 5px;
+    position: relative;
+}
+.bar div {
+    padding: 10px;
+    background-color: #333;
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.bar div span {
+    background-color: #333;
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+.left {
+    left: -5px;
+}
+.right {
+    right: -5px;
+}
+.bar:hover div {
+    visibility: visible;
+    opacity: 1;
+}
+.text {
+    margin: 0;
+    font-size: 0.85em;
+    color: #fff;
+    white-space: nowrap;
+}
+#Mariachi {
+    background-color: orange;
+}
+#Hip-Hop {
+    background-color: #a02fa0;
+}
+#Dembow {
+    background-color: #9FC131;
+}
+#Reggaeton {
+    background-color: #00d2de;
+}
+#Bachata {
+    background-color: #F2C12E;
+}
+#Afrobeats {
+    background-color: #df0d0d;
+}
+#RB {
+    background-color: #00BBC9;
+}
+#Cumbia {
+    background-color: rgb(0, 119, 255);
+}
+#Pop {
+    background-color: #ff00ff;
+}
+#Trap {
+    background-color: #F2668B;
+}
+#Disco {
+    background-color: #e45a24;
+}
+#Rock {
+    background-color: rgb(98, 100, 238);
+}
+#Reggae {
+    background-color: rgb(1, 150, 1);
+}
+#Salsa {
+    background-color: orangered;
+}
